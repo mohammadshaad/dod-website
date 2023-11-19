@@ -2,26 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  @font-face {
+    font-family: "MuseoModernoMedium";
+    src: url("/fonts/MuseoModerno/MuseoModerno-Medium.ttf")
+      format("trueType");
+    font-display: swap;
+    font-weight: bold;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @font-face {
+    font-family: "MuseoModernoBold";
+    src: url("/fonts/MuseoModerno/MuseoModerno-Bold.ttf")
+      format("trueType");
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "MuseoModernoLight";
+    src: url("/fonts/MuseoModerno/MuseoModerno-Light.ttf")
+      format("trueType");
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "MuseoModernoSemiBold";
+    src: url("/fonts/MuseoModerno/MuseoModerno-SemiBold.ttf")
+      format("trueType");
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "MuseoModernoExtraBold";
+    src: url("/fonts/MuseoModerno/MuseoModerno-ExtraBold.ttf")
+      format("trueType");
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "SpaceGroteskRegular";
+    src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf')
+      format('trueType');
+    font-display: swap;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "SpaceGroteskBold";
+    src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf')
+      format('trueType');
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "SpaceGroteskMedium";
+    src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf')
+      format('trueType');
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "SpaceGroteskSemiBold";
+    src: url('/fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.ttf')
+      format('trueType');
+    font-display: swap;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "SpaceGroteskLight";
+    src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf')
+      format('trueType');
+    font-display: swap;
+    font-weight: bold;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* And this snippet from globals.css: */
+html {
+  scroll-behavior: smooth;
+}
+
+.home-page {
+  background-image: url("../public/images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 2000px;
+  /* width: 100vw; */
+}
+
+@media screen and (max-width: 768px) {
+  .home-page {
+    height: 800px;
+  }
 }
