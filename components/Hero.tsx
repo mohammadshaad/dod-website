@@ -1,6 +1,8 @@
 // @ts-nocheck
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import HeroSubHead from './HeroSubHead';
+import HeroTicker from './HeroTicker';
 
 function Hero() {
     return (
@@ -9,34 +11,9 @@ function Hero() {
                 <div className='font-museoModernoMedium w-full flex items-center justify-center text-white text-5xl leading-tight md:text-8xl uppercase'>
                     Dungeons of Developers
                 </div>
-                <div className='text-sm md:text-3xl font-spaceGroteskRegular text-white'>
-                    {/* FYIVITC brings you another thrilling Hackathon */}
-                    <Typewriter
-                        options={{
-                            strings: ['FYIVITC brings you another thrilling Hackathon!'],
-                            autoStart: true,
-                            loop: true,
-                            delay: 50,
-                            deleteSpeed: 10,
-                            pauseFor: 2500,
-                            cursor: '',
-                        }}
-
-                        // onInit={(typewriter) => {
-                        //     typewriter.typeString('FYIVITC brings you another thrilling Hackathon!')
-                        //         .callFunction(() => {
-                        //             // console.log('String typed out!');
-                        //         })
-                        //         .pauseFor(2500)
-                        //         .deleteAll()
-                        //         .loop()
-                        //         .callFunction(() => {
-                        //             // console.log('All strings were deleted');
-                        //         })
-                        //         .start();
-                        // }}
-                    />
-
+                <HeroSubHead />
+                <div className='relative flex items-center justify-center top-52 md:top-64 w-full'> 
+                    <HeroTicker />
                 </div>
             </div>
         </div>

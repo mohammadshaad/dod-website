@@ -103,3 +103,22 @@ html {
     height: 800px;
   }
 }
+
+.ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ticker-text {
+  animation: moveLeft 40s linear infinite; 
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
