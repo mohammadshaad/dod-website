@@ -39,7 +39,7 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="py-40" id="timeline">
+    <section className="" id="timeline">
       {/* <div className='absolute -left-12 md:left-0 '>
         <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
           DOMAINS OF THE HACKATHON

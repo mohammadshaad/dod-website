@@ -20,7 +20,7 @@ const config: Config = {
         spaceGroteskLight: ['SpaceGroteskLight'],
       },
       colors: { 
-        primary: "260441",
+        primary: "#260441",
       },
     },
   },
