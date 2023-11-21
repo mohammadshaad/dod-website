@@ -23,8 +23,8 @@ function ScrollSection() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
+          start: "center center",
+          end: "2000 center",
           scrub: 0.6,
           pin: true,
         },
