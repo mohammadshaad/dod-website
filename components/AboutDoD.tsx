@@ -1,8 +1,11 @@
 import React from 'react'
+import ScrollingText from './ScrollingText'
 
 function AboutDoD() {
   return (
-    <div>AboutDoD</div>
+    <div>
+      <ScrollingText />
+    </div>
   )
 }
 

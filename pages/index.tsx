@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import AboutDoD from '@/components/AboutDoD'
+import Domains from '@/components/Domains'
 
 function index() {
   return (
@@ -9,6 +10,7 @@ function index() {
       {/* <Navbar /> */}
       <Hero />
       <AboutDoD />
+      <Domains />
     </div>
   )
 }
