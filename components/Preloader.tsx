@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Preloader from '@/public/images/preloader2.gif';
+import Preloader from '@/public/images/preloader.gif';
 
 const PreloaderAnimation = () => {
     return (
