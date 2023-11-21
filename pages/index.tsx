@@ -6,11 +6,15 @@ import Domains from '@/components/Domains'
 
 function index() {
   return (
-    <div className='home-page overflow-x-hidden'>
-      {/* <Navbar /> */}
-      <Hero />
-      <AboutDoD />
-      <Domains />
+    <div className='overflow-x-hidden bg-[#260441] h-full'>
+      <div className='home-page '>
+        {/* <Navbar /> */}
+        <Hero />
+        <AboutDoD />
+      </div>
+      <div className='below-bg'>
+        <Domains />
+      </div>
     </div>
   )
 }

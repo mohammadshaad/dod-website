@@ -130,3 +130,11 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.below-bg {
+  background-image: url("../public/images/below-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}

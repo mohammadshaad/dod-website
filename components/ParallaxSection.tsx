@@ -38,7 +38,7 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="" id="timeline">
+    <section className="py-40" id="timeline">
       {/* <div className='absolute -left-12 md:left-0 '>
         <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
           DOMAINS OF THE HACKATHON
@@ -49,7 +49,7 @@ function ScrollSection() {
 
       {/* The div below act just as a trigger. As the doc suggests, the trigger and 
       the animation should alway be two separated refs */}
-      <div ref={triggerRef} className="flex items-center justify-start pl-[1000px] ">
+      <div ref={triggerRef} className="flex items-center justify-start pl-[1400px] ">
         <div ref={sectionRef} className="flex items-center justify-start gap-2 md:gap-6">
           <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
             DOMAINS OF THE HACKATHON

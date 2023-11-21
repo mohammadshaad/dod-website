@@ -19,6 +19,9 @@ const config: Config = {
         spaceGroteskMedium: ['SpaceGroteskMedium'],
         spaceGroteskLight: ['SpaceGroteskLight'],
       },
+      colors: { 
+        primary: "260441",
+      },
     },
   },
   plugins: [],
