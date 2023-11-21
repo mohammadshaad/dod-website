@@ -8,6 +8,7 @@ function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
+  
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
