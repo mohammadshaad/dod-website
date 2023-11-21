@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -13,7 +14,7 @@ function ScrollSection() {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: 0,
+        translateX: "100vw",
       },
       {
         translateX: "-300vw",
@@ -37,29 +38,53 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="scroll-section-outer" id="timeline">
-      <div className=''>Event Timeline</div>
+    <section className="" id="timeline">
+      {/* <div className='absolute -left-12 md:left-0 '>
+        <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+          DOMAINS OF THE HACKATHON
+        </div>
+      </div> */}
       {/* The section up act just as a wrapper. If the trigger (below) is the
       first jsx element in the component, you get an error on route change */}
 
       {/* The div below act just as a trigger. As the doc suggests, the trigger and 
       the animation should alway be two separated refs */}
-      <div ref={triggerRef}>
-        <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section">
-            <Eventcard
-            />{" "}
-          </div>
-          <div className=''>
-            <Image src='' alt="" />
+      <div ref={triggerRef} className="flex items-center justify-start pl-[1000px] ">
+        <div ref={sectionRef} className="flex items-center justify-start gap-2 md:gap-6">
+          <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+            DOMAINS OF THE HACKATHON
           </div>
 
+
           <div className="scroll-section">
-            <Eventcard
-            />
+
+            <Eventcard title="Blockchain" />
+            {" "}
           </div>
-          <div className="scroll-section"></div>
-          <div className="scroll-section"></div>
+          <div className="scroll-section">
+
+            <Eventcard title="UX/UI Design" />
+            {" "}
+          </div>
+          <div className="scroll-section">
+
+            <Eventcard title="Data Science" />
+            {" "}
+          </div>
+          <div className="scroll-section">
+
+            <Eventcard title="Web Development" />
+            {" "}
+          </div>
+          <div className="scroll-section">
+
+            <Eventcard title="App Development" />
+            {" "}
+          </div>
+
+          <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+            DOMAINS OF THE HACKATHON
+          </div>
         </div>
       </div>
     </section>

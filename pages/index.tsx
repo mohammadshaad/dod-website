@@ -6,7 +6,7 @@ import Domains from '@/components/Domains'
 
 function index() {
   return (
-    <div className='home-page '>
+    <div className='home-page overflow-x-hidden'>
       {/* <Navbar /> */}
       <Hero />
       <AboutDoD />
