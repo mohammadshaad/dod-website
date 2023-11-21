@@ -1,44 +1,75 @@
+// @ts-nocheck
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AboutDoD from '@/components/AboutDoD';
 import Domains from '@/components/Domains';
 import Image from 'next/image';
-import Preloader from '@/public/images/preloader2.gif'
+import PreloaderAnimation from '@/components/Preloader';
 
 function Index() {
-  const [loading, setLoading] = useState(true);
+
+  const [fontsLoaded, setFontsLoaded] = useState(false);
 
   useEffect(() => {
-    // Simulate a 2-second delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 5000);
 
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures the effect runs only once
+    const fontsToLoad = [
+      { name: 'MuseoModerno-Regular', url: 'url(/fonts/MuseoModerno/MuseoModerno-Regular.ttf)' },
+      { name: 'MuseoModerno-Bold', url: 'url(/fonts/MuseoModerno/MuseoModerno-Bold.ttf)' },
+      { name: 'MuseoModerno-Light', url: 'url(/fonts/MuseoModerno/MuseoModerno-Light.ttf)' },
+      { name: 'MuseoModerno-SemiBold', url: 'url(/fonts/MuseoModerno/MuseoModerno-SemiBold.ttf)' },
+      { name: 'MuseoModerno-ExtraBold', url: 'url(/fonts/MuseoModerno/MuseoModerno-ExtraBold.ttf)' },
+      { name: 'SpaceGrotesk-Regular', url: 'url(/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf)' },
+      { name: 'SpaceGrotesk-Bold', url: 'url(/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf)' },
+    ];
+
+
+
+    // Function to load a font
+    //@ts-ignore
+    function loadFont(fontInfo) {
+      const font = new FontFace(fontInfo.name, fontInfo.url);
+      return font.load().then(() => {
+        document.fonts.add(font);
+        return true;
+      }).catch((error) => {
+        console.error('Font loading error:', error);
+        return false;
+      });
+    }
+
+    // Load all fonts and check if they are loaded
+    Promise.all(fontsToLoad.map(loadFont))
+      .then((results) => {
+        // Check if all fonts are successfully loaded
+        const allFontsLoaded = results.every((loaded) => loaded);
+        // Display the loader for at least 1 second
+        setTimeout(() => {
+          setFontsLoaded(allFontsLoaded);
+        }, 1000); // 1000 milliseconds (1 second)
+      });
+
+  }, []);
 
   return (
-    <div className={`overflow-x-hidden bg-[#260441] h-full ${loading ? 'hidden' : ''}`}>
-      {loading ? (
-        // Your preloader component here
-        <div className="preloader h-screen w-screen bg-primary">
-          <div className="flex flex-col items-center justify-center h-full">
-            <Image src={Preloader} alt="Loading..." />
+    <div className={` w-full h-full `}>
+      {
+        fontsLoaded ? (
+          <div className='overflow-x-hidden bg-[#260441] h-full'>
+            <div className='home-page'>
+              {/* <Navbar /> */}
+              <Hero />
+              <AboutDoD />
+            </div>
+            <div className='below-bg'>
+              <Domains />
+            </div>
           </div>
-        </div>
-      ) : (
-        <div className='home-page'>
-          {/* <Navbar /> */}
-          <Hero />
-          <AboutDoD />
-        </div>
-      )}
-      {!loading && (
-        <div className='below-bg'>
-          <Domains />
-        </div>
-      )}
+        ) : (
+          <PreloaderAnimation />
+        )
+      }
+
     </div>
   );
 }
