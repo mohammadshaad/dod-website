@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AboutDoD from '@/components/AboutDoD';
 import Domains from '@/components/Domains';
+import PastSpons from '@/components/PastSpons';
 import Image from 'next/image';
 import PreloaderAnimation from '@/components/Preloader';
 
@@ -63,6 +64,7 @@ function Index() {
             </div>
             <div className='below-bg'>
               <Domains />
+              <PastSpons />
             </div>
           </div>
         ) : (
