@@ -55,6 +55,10 @@ const ScrollingText = () => {
 
           spans[i].style.opacity = opacityValue;
         }
+
+        else {
+          spans[i].style.opacity = 0;
+        }
       }
     }
 
