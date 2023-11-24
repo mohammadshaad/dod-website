@@ -34,7 +34,7 @@ function ScrollSection() {
         const pin = gsap.fromTo(
             sectionRef.current,
             {
-                translateX: "-1600vw",
+                translateX: window.innerWidth > 768 ? "-1100vw" : "-2100vw", // Adjust the values based on your design
             },
             {
                 translateX: "100vw",
@@ -43,7 +43,7 @@ function ScrollSection() {
                 scrollTrigger: {
                     trigger: triggerRef.current,
                     start: "center center",
-                    end: "8000 center",
+                    end: "10000 center",
                     scrub: 0.6,
                     pin: true,
                 },

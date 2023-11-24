@@ -7,6 +7,7 @@ import Domains from '@/components/Domains';
 import PastSpons from '@/components/PastSpons';
 import Image from 'next/image';
 import PreloaderAnimation from '@/components/Preloader';
+import AboutFYI from '@/components/AboutFYI';
 
 function Index() {
 
@@ -64,6 +65,7 @@ function Index() {
             </div>
             <div className='below-bg'>
               <Domains />
+              {/* <AboutFYI /> */}
               <PastSpons />
             </div>
           </div>
