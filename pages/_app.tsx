@@ -21,10 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags (for Twitter Card) */}
-        <meta name="twitter:card" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
+        <meta name="twitter:card" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png?raw=true" />
         <meta name="twitter:title" content="DUNGEON OF DEVELOPERS" />
         <meta name="twitter:description" content="FYIVITC brings you another thrilling Hackathon" />
-        <meta name="twitter:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
+        <meta name="twitter:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png?raw=true" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
