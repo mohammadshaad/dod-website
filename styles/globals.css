@@ -138,3 +138,19 @@ html {
   background-position: center;
   /* height: 100%; */
 }
+
+.preloader-bg {
+  background-image: url("../public/images/preloader-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100%; */
+}
+
+.fyi-bg {
+  background-image: url("../public/images/fyi-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}

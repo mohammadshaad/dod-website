@@ -75,7 +75,7 @@ const ScrollingText = () => {
     <div className='flex items-center justify-center pb-40 px-12 md:px-40 scrolling-text'>
       <div className='flex items-start justify-center mt-24'>
         <div className='absolute -left-12 md:left-0 '>
-          <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+          <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0 underline-offset-4'>
             ABOUT THIS HACKATHON
           </div>
         </div>

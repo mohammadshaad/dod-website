@@ -5,7 +5,7 @@ import Preloader from '@/public/images/preloader.gif';
 
 const PreloaderAnimation = () => {
     return (
-        <div className='w-full h-screen flex items-center justify-center z-50 bg-gradient-to-br from-primary from-90% to-secondary to-100%'>
+        <div className='preloader-bg w-full h-screen flex items-center justify-center z-50 bg-primary'>
 
             <Head>
                 <link

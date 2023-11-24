@@ -71,7 +71,7 @@ function ScrollSection() {
       the animation should alway be two separated refs */}
             <div ref={triggerRef} className="flex items-center justify-start">
                 <div ref={sectionRef} className="flex items-center justify-start gap-10 md:gap-10">
-                    <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+                    <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0 underline-offset-4'>
                         OUR PAST SPONSORS
                     </div>
 
@@ -174,7 +174,7 @@ function ScrollSection() {
                     </div>
 
 
-                    <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
+                    <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0 underline-offset-4'>
                         OUR PAST SPONSORS
                     </div>
                 </div>
