@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Open Graph Meta Tags (for social media sharing) */}
         <meta property="og:title" content="DUNGEON OF DEVELOPERS" />
         <meta property="og:description" content="FYIVITC brings you another thrilling Hackathon" />
-        <meta property="og:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
+        <meta property="og:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png?raw=true" />
         <meta property="og:url" content="https://www.dungeonofdevs.tech" />
         <meta property="og:type" content="website" />
 
