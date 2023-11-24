@@ -16,15 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Open Graph Meta Tags (for social media sharing) */}
         <meta property="og:title" content="DUNGEON OF DEVELOPERS" />
         <meta property="og:description" content="FYIVITC brings you another thrilling Hackathon" />
-        <meta property="og:image" content="public/images/metatag.png" />
+        <meta property="og:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
         <meta property="og:url" content="https://www.dungeonofdevs.tech" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags (for Twitter Card) */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Your Twitter Title" />
-        <meta name="twitter:description" content="Your Twitter Description" />
-        <meta name="twitter:image" content="URL to your image" />
+        <meta name="twitter:card" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
+        <meta name="twitter:title" content="DUNGEON OF DEVELOPERS" />
+        <meta name="twitter:description" content="FYIVITC brings you another thrilling Hackathon" />
+        <meta name="twitter:image" content="https://github.com/mohammadshaad/dod-website/blob/main/public/images/metatag.png" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
@@ -33,13 +33,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
         {/* CSS Reset or Normalize.css */}
-        <link rel="stylesheet" href="path-to-reset-or-normalize.css" />
+        {/* <link rel="stylesheet" href="path-to-reset-or-normalize.css" /> */}
 
         {/* Your custom stylesheets or fonts */}
         {/* <link rel="stylesheet" href="path-to-your-custom-styles.css" /> */}
         
         {/* Title */}
-        <title>Your Website Title</title>
+        <title>DUNGEON OF DEVELOPERS</title>
       </Head>
       <Component {...pageProps} />
     </>
