@@ -9,6 +9,7 @@ import Image from 'next/image';
 import PreloaderAnimation from '@/components/Preloader';
 import AboutFYI from '@/components/AboutFYI';
 import Glipmses from '@/components/Glipmses';
+import ContactUs from '@/components/ContactUs';
 
 function Index() {
 
@@ -69,6 +70,7 @@ function Index() {
               <PastSpons />
               <AboutFYI />
               <Glipmses />
+              <ContactUs />
             </div>
           </div>
         ) : (
