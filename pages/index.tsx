@@ -10,6 +10,7 @@ import PreloaderAnimation from '@/components/Preloader';
 import AboutFYI from '@/components/AboutFYI';
 import Glipmses from '@/components/Glipmses';
 import ContactUs from '@/components/ContactUs';
+import Footer from '@/components/Footer';
 
 function Index() {
 
@@ -71,6 +72,7 @@ function Index() {
               <AboutFYI />
               <Glipmses />
               <ContactUs />
+              <Footer />
             </div>
           </div>
         ) : (
