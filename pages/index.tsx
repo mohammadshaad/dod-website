@@ -8,6 +8,7 @@ import PastSpons from '@/components/PastSpons';
 import Image from 'next/image';
 import PreloaderAnimation from '@/components/Preloader';
 import AboutFYI from '@/components/AboutFYI';
+import Glipmses from '@/components/Glipmses';
 
 function Index() {
 
@@ -67,6 +68,7 @@ function Index() {
               <Domains />
               <PastSpons />
               <AboutFYI />
+              <Glipmses />
             </div>
           </div>
         ) : (

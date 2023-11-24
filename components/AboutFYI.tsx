@@ -8,8 +8,8 @@ function AboutFYI() {
             <div className='md:px-24 md:py-2 underline font-museoModernoMedium text-sm md:text-xl  text-white/50 flex-shrink-0 underline-offset-4'>
                 ABOUT FYI
             </div>
-            <div className='fyi-bg flex items-start justify-center flex-col rounded-3xl'>
-                <div className='w-28 md:w-36 relative bottom-10 md:bottom-5 right-6   md:right-10'>
+            <div className='fyi-bg shadow-2xl flex items-start justify-center flex-col rounded-3xl'>
+                <div className='w-28 md:w-36 relative bottom-10 md:bottom-5 right-6   md:right-10 '>
                     <Image src={FYILogo} alt='FYI Logo' />
                 </div>
                 <p className='text-xl flex items-center justify-center md:text-4xl font-spaceGroteskMedium relative bottom-5 md:bottom-10 pb-10 md:pb-10 px-10 md:px-24 text-justify !leading-snug	 '>

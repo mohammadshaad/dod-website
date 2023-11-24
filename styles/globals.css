@@ -136,7 +136,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .preloader-bg {
@@ -153,4 +153,61 @@ html {
   background-size: cover;
   background-position: center;
   height: 100%;
+}
+
+.slider-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider .slider-row {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  /* border: 0.2px solid rgba(255, 0, 151, 1); */
+  /* opacity: 50%; */
+  background-image: url("../public/images/gallery.png");
+  background-size: cover;
+  animation: slide 70s linear infinite;
+}
+
+.slider-row::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #260441bc,
+    #26044100
+  );
+  width: 100%;
+  height: 100%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 850px;
+  background: linear-gradient(0deg, #260441, #26044100);
+  width: 80%;
+  height: 80%;
+}
+
+@keyframes slide {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: -2956px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .slider-row {
+    height: 80% !important;
+  }
+
 }
