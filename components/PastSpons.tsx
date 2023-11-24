@@ -34,11 +34,11 @@ function ScrollSection() {
         const pin = gsap.fromTo(
             sectionRef.current,
             {
-                translateX: "-1900vw",
+                translateX: "-1600vw",
             },
             {
                 translateX: "100vw",
-                ease: "ease-in",
+                ease: "none",
                 duration: 1,
                 scrollTrigger: {
                     trigger: triggerRef.current,
