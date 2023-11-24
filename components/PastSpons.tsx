@@ -34,16 +34,16 @@ function ScrollSection() {
         const pin = gsap.fromTo(
             sectionRef.current,
             {
-                translateX: "-2200vw",
+                translateX: "-1900vw",
             },
             {
-                translateX: "500vw",
-                ease: "none",
-                duration: 2,
+                translateX: "100vw",
+                ease: "ease-in",
+                duration: 1,
                 scrollTrigger: {
                     trigger: triggerRef.current,
                     start: "center center",
-                    end: "2000 center",
+                    end: "8000 center",
                     scrub: 0.6,
                     pin: true,
                 },
@@ -70,7 +70,7 @@ function ScrollSection() {
             {/* The div below act just as a trigger. As the doc suggests, the trigger and 
       the animation should alway be two separated refs */}
             <div ref={triggerRef} className="flex items-center justify-start">
-                <div ref={sectionRef} className="flex items-center justify-start gap-2 md:gap-6">
+                <div ref={sectionRef} className="flex items-center justify-start gap-10 md:gap-10">
                     <div className='scroll-section underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
                         OUR PAST SPONSORS
                     </div>
