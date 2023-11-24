@@ -65,8 +65,8 @@ function Index() {
             </div>
             <div className='below-bg'>
               <Domains />
-              {/* <AboutFYI /> */}
               <PastSpons />
+              <AboutFYI />
             </div>
           </div>
         ) : (
