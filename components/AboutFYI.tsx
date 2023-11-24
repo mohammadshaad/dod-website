@@ -12,7 +12,7 @@ function AboutFYI() {
                 <div className='w-28 md:w-36 relative bottom-10 md:bottom-5 right-6   md:right-10'>
                     <Image src={FYILogo} alt='FYI Logo' />
                 </div>
-                <p className='text-xl flex items-center justify-center md:text-4xl font-spaceGroteskMedium relative bottom-5 md:bottom-10 pb-10 md:pb-10 px-10 md:px-24 text-justify !leading-normal	 '>
+                <p className='text-xl flex items-center justify-center md:text-4xl font-spaceGroteskMedium relative bottom-5 md:bottom-10 pb-10 md:pb-10 px-10 md:px-24 text-justify !leading-snug	 '>
                     Fraternity of Young Innovators (FYI) club is an active social club in VIT Chennai which give awareness about social problems with curious, passionate young minds in their club. This is one of the largest clubs of VIT Chennai with lots of talents in their club
                 </p>
             </div>
