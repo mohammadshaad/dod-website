@@ -15,7 +15,7 @@ function ScrollSection() {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: "300vw",
+        translateX: window.innerWidth > 768 ? "180vw" : "260vw",
       },
       {
         translateX: "-300vw",

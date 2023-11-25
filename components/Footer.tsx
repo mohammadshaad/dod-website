@@ -9,7 +9,7 @@ function Footer() {
         <div className='bg-tertiary w-full flex md:flex-row flex-col items-start md:gap-2 gap-4 md:items-center justify-center p-10 md:p-20 mt-20' >
             <div className='flex items-start justify-center flex-col gap-2 w-full'>
                 <div className='uppercase font-museoModernoMedium text-4xl text-black '>
-                    Dungeons of developers
+                    Dungeon of developers
                 </div>
                 <div className='uppercase font-spaceGroteskRegular text-xl'>
                     FYIVITC
