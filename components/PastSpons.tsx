@@ -34,7 +34,7 @@ function ScrollSection() {
         const pin = gsap.fromTo(
             sectionRef.current,
             {
-                translateX: window.innerWidth > 768 ? "-1100vw" : "-2100vw", // Adjust the values based on your design
+                translateX: window.innerWidth > 768 ? "-1050vw" : "-2100vw", 
             },
             {
                 translateX: "100vw",
@@ -58,7 +58,7 @@ function ScrollSection() {
     }, []);
 
     return (
-        <section className="" id="timeline">
+        <section className="md:-space-y-60" id="timeline">
             {/* <div className='absolute -left-12 md:left-0 '>
         <div className='mt-20 md:mt-28 underline font-museoModernoMedium text-xs md:text-lg -rotate-90 text-white/50 flex-shrink-0'>
           DOMAINS OF THE HACKATHON
